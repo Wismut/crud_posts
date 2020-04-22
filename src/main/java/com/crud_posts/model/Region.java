@@ -1,6 +1,8 @@
-package main.java.com.crud_posts.model;
+package com.crud_posts.model;
 
-public class Region {
+import java.io.Serializable;
+
+public class Region implements Serializable {
     private int id;
     private String name;
 

@@ -1,8 +1,9 @@
-package main.java.com.crud_posts.model;
+package com.crud_posts.model;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class Post {
+public class Post implements Serializable {
     private int id;
     private String content;
     private LocalDateTime created;
