@@ -3,7 +3,7 @@ package com.crud_posts.repository;
 import java.util.List;
 
 public interface GenericRepository<T, ID> {
-    T save(T value);
+    T save(T entity);
 
     T getBy(ID id);
 

@@ -3,14 +3,14 @@ package com.crud_posts.model;
 import java.io.Serializable;
 
 public class Region implements Serializable {
-    private int id;
+    private Long id;
     private String name;
 
     public Region() {
 
     }
 
-    public Region(int id, String name) {
+    public Region(Long id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -19,11 +19,11 @@ public class Region implements Serializable {
         this.name = name;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

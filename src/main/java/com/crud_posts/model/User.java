@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 public class User implements Serializable {
-    private int id;
+    private Long id;
     private String firstName;
     private String lastName;
     private List<Post> posts;
@@ -14,7 +14,7 @@ public class User implements Serializable {
 
     }
 
-    public User(int id, String firstName, String lastName, List<Post> posts, Region region) {
+    public User(Long id, String firstName, String lastName, List<Post> posts, Region region) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -23,14 +23,14 @@ public class User implements Serializable {
     }
 
     public User(String firstName, String lastName, List<Post> posts, Region region) {
-        this(-1, firstName, lastName, posts, region);
+        this(null, firstName, lastName, posts, region);
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

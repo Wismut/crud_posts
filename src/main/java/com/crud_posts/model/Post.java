@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 public class Post implements Serializable {
-    private int id;
+    private Long id;
     private String content;
     private LocalDateTime created;
     private LocalDateTime updated;
@@ -13,7 +13,7 @@ public class Post implements Serializable {
 
     }
 
-    public Post(int id, String content, LocalDateTime created, LocalDateTime updated) {
+    public Post(Long id, String content, LocalDateTime created, LocalDateTime updated) {
         this.id = id;
         this.content = content;
         this.created = created;
@@ -21,14 +21,14 @@ public class Post implements Serializable {
     }
 
     public Post(String content, LocalDateTime created, LocalDateTime updated) {
-        this(-1, content, created, updated);
+        this(null, content, created, updated);
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
