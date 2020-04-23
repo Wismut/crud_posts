@@ -11,7 +11,10 @@ public class HandlingUserInput {
         BufferedReader buffReader = new BufferedReader(new InputStreamReader(System.in));
         View view = null;
         do {
-            System.out.println("Print the entity type");
+            System.out.println("Print the entity type:");
+            System.out.println("u for user");
+            System.out.println("p for post");
+            System.out.println("r for region");
             try {
                 String entityType = buffReader.readLine();
                 view = ViewFactory.create(entityType);
@@ -19,7 +22,7 @@ public class HandlingUserInput {
 
             }
         } while (view == null);
-        System.out.println("Type is: " + view.getClass().getName());
+        System.out.println("Type is: " + view.getClass().getSimpleName());
         return view;
     }
 }

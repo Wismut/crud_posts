@@ -4,24 +4,26 @@ import com.crud_posts.model.User;
 import com.crud_posts.repository.JavaIOUserRepositoryImpl;
 import com.crud_posts.repository.UserRepository;
 
-import java.util.List;
-
-public class UserController implements Controller {
+public class UserController implements Controller<User> {
     UserRepository userRepository = new JavaIOUserRepositoryImpl();
 
-    public List<User> getUsers() {
-        return userRepository.getAll();
+    @Override
+    public User get(Long id) {
+        return null;
     }
 
-    public User getUserBy(Long id) {
-        return userRepository.getBy(id);
+    @Override
+    public void save(User entity) {
+
     }
 
-    public User save(User user) {
-        return userRepository.save(user);
+    @Override
+    public void update(User entity) {
+
     }
 
-    public void deleteBy(Long id) {
-        userRepository.deleteBy(id);
+    @Override
+    public void delete(Long id) {
+
     }
 }
