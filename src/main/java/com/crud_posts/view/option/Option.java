@@ -1,4 +1,4 @@
-package com.crud_posts.util;
+package com.crud_posts.view.option;
 
 public class Option {
     private final String flag;

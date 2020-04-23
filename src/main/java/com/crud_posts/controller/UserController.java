@@ -6,7 +6,7 @@ import com.crud_posts.repository.UserRepository;
 
 import java.util.List;
 
-public class UserController {
+public class UserController implements Controller {
     UserRepository userRepository = new JavaIOUserRepositoryImpl();
 
     public List<User> getUsers() {

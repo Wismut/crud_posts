@@ -1,4 +1,4 @@
-package com.crud_posts.util;
+package com.crud_posts.view.option;
 
 import java.util.Arrays;
 import java.util.HashMap;
